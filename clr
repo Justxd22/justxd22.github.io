@@ -1,0 +1,24 @@
+#git pink
+filter: invert(39%) sepia(29%) saturate(1456%) hue-rotate(260deg) brightness(80%) contrast(78%);
+filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);
+#dis
+filter: invert(24%) sepia(68%) saturate(5249%) hue-rotate(215deg) brightness(102%) contrast(102%);
+
+
+#tweet light blue
+filter: invert(83%) sepia(94%) saturate(5230%) hue-rotate(89deg) brightness(102%) contrast(100%);
+
+
+#instgram 
+filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);
+
+#reddit
+
+filter: invert(15%) sepia(88%) saturate(5088%) hue-rotate(323deg) brightness(93%) contrast(103%);
+
+#email
+filter: invert(83%) sepia(76%) saturate(245%) hue-rotate(358deg) brightness(97%) contrast(90%);
+
+#telegram
+
+filter: invert(71%) sepia(80%) saturate(926%) hue-rotate(114deg) brightness(103%) contrast(101%);
