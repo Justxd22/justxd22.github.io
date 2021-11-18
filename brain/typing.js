@@ -5,7 +5,9 @@ const textToSay = [
  "Db manager.", "Data Analyzer.",
  "Backend dev.", "Cat lover."];
 
-setTyper(text, textToSay);
+function startTyping(){
+   setTyper(text, textToSay);
+}
 
 function setTyper(text, textToSay){
 
@@ -19,7 +21,7 @@ var wordIndex = 0;
 var letterIndex = 0;
 var textInterval;
 
-console.log("starting the typer guy");
+console.log("starting the typing guy");
 startTyping();
 
 function startTyping(){textInterval = setInterval(typeLetter, letterDelay);}
@@ -43,5 +45,4 @@ function nextWord(){
 letterIndex = 0;
 direction = forward;
 wordIndex++;
-
 if (wordIndex == textToSay.length){wordIndex = 0;}}}

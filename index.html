@@ -9,30 +9,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href= "style/bootstrap.css">-->
 <link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/loadingAnim.css">
 <link rel="stylesheet" href= "style/fonts.css">
 <title>.xD22</title>
-
 
 </head>
 
 <body>
+  <div id="loading" class="loading" style="opacity: 1;">
+    <div class="blocks mover"></div>
+    <div class="blocks jumper"></div>
+    <div class="blocks jumper"></div>
+    <div class="blocks jumper"></div>
+    <div class="blocks jumper"></div>
+    <div class="tex"><b>loading....</b></div>
+  </div>
 
-<div id="particles-js"></div>
-
-<section id="pr1">
-
-<div class="thebox section">
-
-<div class="preventSelect">
-
-<h1>.<b>xD</b>22</h1>
-<p class="typing"></p>
-
-</div>
-
-
-<div class="stuff">
-
+  <div id="particles-js"></div>
+  <div id="thebody" style="opacity: 0; display: none;">
+  
+  <section id="pr1">
+    <div class="thebox section">
+      <div class="preventSelect">
+        <h1>.<b>xD</b>22</h1>
+        <p class="typing"></p>
+      </div>
+      
+      <div class="stuff">
 <a href="https://github.com/justxd22"><img src="img/github.svg" alt="wHeRecOdElIvE" class="social git"/></a>
 <a href=""><img src="img/discord.svg" alt="dIsCoRd" class="social discord"/></a>
 <a href="https://www.reddit.com/user/_xd22"><img src="img/reddit.svg" alt="rEdDiT" class="social redd"/></a>
@@ -40,16 +43,27 @@
 <a href="https://instagram.com/_.xd22"><img src="img/instagram.svg" alt="iNsTaGrAmFoRdUdEs" class="social instagram"/></a>
 <a href="https://twitter.com/_xd222"><img src="img/twitter.svg" alt="tWiTtEr" class="social tweet"/></a>
 <a href="mailto:xdjust18@gmail.com"><img src="img/envelope.svg" alt="pEoPlEsTiLlUsEmAiL" class="social email"/></a>
-
-</div>
-
-</div>
-
-</section>
-
+      </div>
+    </div>
+  </section>
+  </div>
+  
 </body>
 
 <script type="text/javascript" src="brain/typing.js"></script>
 <script type="text/javascript" src="brain/particles.js""></script>
-<script type="text/javascript" src="brain/app.js"></script>
+<script type="text/javascript" src="brain/main.js"></script>
+<script type="text/javascript" src="brain/jquery.js"></script>
+<!-- <script> 
+  setTimeout(function () {
+       $(".loading").fadeOut("slow");
+      }, 3700);
+</script>
+<script> 
+  setTimeout(function () {
+       $(".thebody").fadeIn("slow");
+      }, 4100);
+</script> -->
+
+
 </html>
