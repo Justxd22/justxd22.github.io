@@ -1,6 +1,6 @@
 const text = document.querySelector(".typing");
 const textToSay = [
- "HighSchool Student.", "Telegram dev.",
+ "CE Student.", "Telegram dev.",
  "Game dev.", "Web dev (kind of).",
  "Db manager.", "Data Analyzer.",
  "Backend dev.", "Cat lover."];
