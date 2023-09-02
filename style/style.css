@@ -208,7 +208,7 @@ color: blue;
 .redd{filter: invert(15%) sepia(88%) saturate(5088%) hue-rotate(323deg) brightness(93%) contrast(103%);}
 .instagram{filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);}
 .email{filter: invert(83%) sepia(76%) saturate(245%) hue-rotate(358deg) brightness(97%) contrast(90%);}
-.tweet{filter: invert(83%) sepia(94%) saturate(5230%) hue-rotate(89deg) brightness(102%) contrast(100%);}
+.linked{filter: invert(100%);}
 .tele{
   filter: invert(71%) sepia(80%) saturate(926%) hue-rotate(114deg) brightness(103%) contrast(101%);
   transform-origin: 50% 50%;
