@@ -205,7 +205,40 @@ color: blue;
 .git{filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);}
 .discord{filter: invert(24%) sepia(68%) saturate(5249%) hue-rotate(215deg) brightness(102%) contrast(102%);}
 .tweet{filter: invert(83%) sepia(94%) saturate(5230%) hue-rotate(89deg) brightness(102%) contrast(100%);}
-.tele{filter: invert(71%) sepia(80%) saturate(926%) hue-rotate(114deg) brightness(103%) contrast(101%);}
 .redd{filter: invert(15%) sepia(88%) saturate(5088%) hue-rotate(323deg) brightness(93%) contrast(103%);}
 .instagram{filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);}
 .email{filter: invert(83%) sepia(76%) saturate(245%) hue-rotate(358deg) brightness(97%) contrast(90%);}
+.tweet{filter: invert(83%) sepia(94%) saturate(5230%) hue-rotate(89deg) brightness(102%) contrast(100%);}
+.tele{
+  filter: invert(71%) sepia(80%) saturate(926%) hue-rotate(114deg) brightness(103%) contrast(101%);
+  transform-origin: 50% 50%;
+  /* add variation */
+  transform: translate(0, 0) rotate(0deg) scale(1);
+  animation: flap 3s ease-in-out infinite;
+  animation-delay: random(0, 4s);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flap {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+
+  25% {
+    transform: translate(-6px, -6px) rotate(5deg) scale(1.05);
+  }
+
+  50% {
+    transform: translate(4px, 4px) rotate(-5deg) scale(1);
+  }
+
+  75% {
+    transform: translate(-6px, -6px) rotate(5deg) scale(1.05);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
