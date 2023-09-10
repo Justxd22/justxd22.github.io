@@ -203,7 +203,15 @@ color: blue;
 }
 
 .git{filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);}
-.discord{filter: invert(24%) sepia(68%) saturate(5249%) hue-rotate(215deg) brightness(102%) contrast(102%);}
+.discord{
+  filter: invert(24%) sepia(68%) saturate(5249%) hue-rotate(190deg) brightness(102%) contrast(102%);
+  animation-name: dd-bounce;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
 .tweet{filter: invert(83%) sepia(94%) saturate(5230%) hue-rotate(89deg) brightness(102%) contrast(100%);}
 .redd{filter: invert(15%) sepia(88%) saturate(5088%) hue-rotate(323deg) brightness(93%) contrast(103%);}
 .instagram{filter: invert(60%) sepia(9%) saturate(1310%) hue-rotate(232deg) brightness(93%) contrast(85%);}
@@ -240,5 +248,34 @@ color: blue;
 
   100% {
     transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+@keyframes dd-bounce {
+  0% {
+      transform: scale(1, 1) translateY(0)
+  }
+
+  10% {
+      transform: scale(1.1, 0.9) translateY(0)
+  }
+
+  30% {
+      transform: scale(0.9, 1.1) translateY(-0.5em)
+  }
+
+  50% {
+      transform: scale(1.05, 0.95) translateY(0)
+  }
+
+  57% {
+      transform: scale(1, 1) translateY(-0.125em)
+  }
+
+  64% {
+      transform: scale(1, 1) translateY(0)
+  }
+
+  100% {
+      transform: scale(1, 1) translateY(0)
   }
 }
