@@ -5,7 +5,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  animation: fadeOUT 4s 3s ease-in-out forwards;
+  animation: fadeOUT 2s 3s ease-in-out forwards;
 
 }
 

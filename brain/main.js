@@ -1,5 +1,5 @@
 var loadingTimer = 4500;
-var bodyTimer = loadingTimer + 1300;
+var bodyTimer = loadingTimer + 2300;
 const loadingAnim = document.getElementById("loading");
 const thebody = document.getElementById("thebody");
 const partii = document.getElementById("particles-js");
