@@ -1,9 +1,8 @@
 const text = document.querySelector(".typing");
 const textToSay = [
- "CE Student.", "Telegram dev.",
+ "Software Enginner.", "Mechanical Enginner.", "Telegram dev.",
  "Game dev.", "Web dev (kind of).",
- "Db manager.", "Data Analyzer.",
- "Backend dev.", "Cat lover."];
+ "Full stack dev.", "Cat lover.", "Enviroment Activist."];
 
 function startTyping(){
    setTyper(text, textToSay);

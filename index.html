@@ -11,21 +11,23 @@
 <link rel="stylesheet" href="style/loadingAnim.css">
 <link rel="stylesheet" href= "style/fonts.css">
 <title>.xD22</title>
-
+<!-- add ceo -->
 </head>
 
-<body>
-  <div id="loading" class="loading" style="opacity: 1;">
+<body onload="main();">
+  <div id="loading" class="loading">
     <div class="blocks mover"></div>
     <div class="blocks jumper"></div>
     <div class="blocks jumper"></div>
     <div class="blocks jumper"></div>
     <div class="blocks jumper"></div>
-    <div class="tex"><b>loading....</b></div>
+    <!-- <div id="prog" class="progress">
+      <div class="progress-value"></div>
+    </div> -->
   </div>
 
-  <div id="particles-js"></div>
-  <div id="thebody" style="opacity: 0; display: none;">
+  <div id="particles-js" class="fadeI"></div>
+  <div id="thebody" class="thebody" style="display: none;">
   
   <section id="pr1">
     <div class="block-ball">
@@ -37,7 +39,7 @@
     <div class="thebox">
 
       <div class="preventSelect">
-        <h1>.<b>xD</b>22</h1>
+        <h1>.<span class="hh1">xD</span>22</h1>
         <p class="typing"></p>
       </div>
       

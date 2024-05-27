@@ -20,14 +20,28 @@ background-size: cover;
 }
 
 h1{
-
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
-font-weight: 300;
-color: #FFFFFF;
-font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-size: 4rem;
 
 }
+.hh1{
+  display: inline-block;
+  transform: rotate(90deg);
+  animation: hh1 3s 4s ease-in-out forwards;
+}
+
+
+@keyframes hh1 {
+  100% {
+    transform: rotate(0deg);
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
+}
+
 
 p{
 
@@ -49,7 +63,7 @@ font-weight: 300;
   height: 800px;
   border-radius: 40rem;
   transform: translateY(25%) translateX(30%);
-  animation: ball-1 15s ease-in-out infinite alternate;
+  animation: ball-1 15s ease-in-out infinite alternate;c
   z-index: 0;
 }
 
@@ -126,6 +140,8 @@ font-weight: 300;
     border-radius: 0 25px 25px 0;
 /*    box-shadow: rgb(70 103 108 / 20%) 100px 0px 40px;*/
 /*    border: dotted red 10px;*/
+    animation: fade 3s ease-in-out forwards;
+
 }
 
 .block-ball {
@@ -145,7 +161,9 @@ font-weight: 300;
     padding-left: 4rem;
     margin-left: 0 !important;
     border-radius: 0 25px 25px 0;
+    opacity: 0;
 /*    border: dotted blue 10px;*/
+    animation: fade 6s 4s ease-in-out forwards;
 }
 
 .preventSelect{
@@ -278,4 +296,53 @@ color: blue;
   100% {
       transform: scale(1, 1) translateY(0)
   }
+}
+
+
+.fadeO {
+  opacity: 0;
+  animation: fadeOUT 3s ease-in-out;
+}
+
+.fadeI {
+  display: none;
+  opacity: 0;
+  animation: fade 4s 2s ease-in-out forwards;
+}
+
+
+
+.scaleO {
+	opacity: 0;
+	animation: scaleOUT 6s ease-in-out;
+}
+
+@keyframes scaleOUT {
+	from {
+		transform: scale(1.8);
+		opacity: 1;
+	}
+	to {
+		transform: scale(8);
+		opacity: 0;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+@keyframes fadeOUT {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }

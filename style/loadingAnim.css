@@ -4,7 +4,21 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: fadeOUT 4s 3s ease-in-out forwards;
+
 }
+
+@keyframes fadeOUT {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+
 .loading .tex {
   position: absolute;
   width: 90%;
@@ -303,4 +317,37 @@
 }
 .jumper:nth-child(5) {
   animation: jump4 2.6s 0.65s infinite linear;
+}
+
+
+.progress {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 108px;
+  transform: translateX(-55%);
+  scale: .9;
+  background: rgba(255,255,255,0.1);
+  border-radius: 100px;
+  padding: 0 5px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  width: 500px;
+  display: flex;
+  z-index: 999;
+}
+
+.progress-value {
+  animation: load 4s normal forwards;
+  box-shadow: 0px 0px 35px 0px #ff4992;
+  border-radius: 100px;
+  background: #ff8037;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
 }
