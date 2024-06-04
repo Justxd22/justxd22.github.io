@@ -132,7 +132,7 @@ font-weight: 300;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
-    padding-left: 4rem;
+    padding-left: 3rem;
     margin-left: 0 !important;
     background: rgba(38, 56, 58, 0.6);
     backdrop-filter: saturate(110%) blur(3rem);
@@ -158,7 +158,7 @@ font-weight: 300;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
-    padding-left: 4rem;
+    padding-left: 3rem;
     margin-left: 0 !important;
     border-radius: 0 25px 25px 0;
     opacity: 0;
@@ -345,4 +345,30 @@ color: blue;
 	to {
 		opacity: 0;
 	}
+}
+
+.pedroo{
+  height: 40px;
+  animation: bounce .2s linear infinite alternate ;
+}
+
+.cover{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #f9e6e0;
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+  to{
+    transform: translateY(4%);
+  }
 }
