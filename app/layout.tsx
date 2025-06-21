@@ -60,7 +60,6 @@ export const metadata: Metadata = {
     creator: "@_.xd22",
     images: ["https://0x22.me/XD.jpg"],
   },
-  themeColor: "#000000",
   robots: {
     index: true,
     follow: true,
