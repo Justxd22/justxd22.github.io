@@ -9,7 +9,7 @@ export default function Header() {
 
   const navItems = [
     { name: "Projects", href: "#Projects" },
-    { name: "Github", href: "#Github" },
+    { name: "About", href: "#About" },
   ]
 
   useEffect(() => {

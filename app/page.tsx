@@ -382,11 +382,11 @@ export default function Home() {
       {!isLoading && (
         <>
 
-            <section id="about">
+            <section id="About">
               <AboutSection/>
             </section>
 
-      <section id="projects">
+      <section id="Projects">
         <ProjectsSection/>
       </section>
 
