@@ -23,8 +23,53 @@ const dmSerif = localFont({
 });
 
 export const metadata: Metadata = {
-  title: '.xD22',
-  description: 'Personal portfolio of xD22',
+  title: {
+    default: '.xD22 – Software & Mechanical Engineer',
+    template: '%s | .xD22'
+  },
+  description: "Personal portfolio of xD22 – a Software and Mechanical Engineer passionate about system-level programming, web development, and embedded systems.",
+  keywords: [
+    "xD22", "xd22 portfolio", "software engineer", "mechanical engineer", 
+    "full stack developer", "embedded systems", "Web3", "DevOps", 
+    "Next.js", "React", "Tailwind", "Mansoura University"
+  ],
+  metadataBase: new URL("https://0x22.me"),
+  authors: [{ name: ".xD22", url: "https://0x22.me" }],
+  creator: ".xD22",
+  publisher: ".xD22",
+  openGraph: {
+    title: ".xD22 – Engineer & Developer",
+    description: "Portfolio of a Software and Mechanical Engineer – showcasing work in web development, embedded systems, and open source.",
+    url: "https://0x22.me",
+    siteName: ".xD22",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://0x22.me/XD.jpg",
+        width: 1200,
+        height: 630,
+        alt: ".xD22 – Engineer & Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: ".xD22 – Engineer & Developer",
+    description: "Explore the personal portfolio of xD22 – developer, engineer.",
+    creator: "@_.xd22",
+    images: ["https://0x22.me/XD.jpg"],
+  },
+  themeColor: "#000000",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 }
 
 export default function RootLayout({
