@@ -4,5 +4,12 @@
     "root": "fa503410fc78e9daf3e34ca79d00cfbdcd2e8e671fcd05d7240e6e4b78f9c82c",
     "0x": "fa503410fc78e9daf3e34ca79d00cfbdcd2e8e671fcd05d7240e6e4b78f9c82c",
     "22": "fa503410fc78e9daf3e34ca79d00cfbdcd2e8e671fcd05d7240e6e4b78f9c82c"
+  },
+  "relays": {
+    "fa503410fc78e9daf3e34ca79d00cfbdcd2e8e671fcd05d7240e6e4b78f9c82c": [
+      "wss://relay.damus.io",
+      "wss://nos.lol",
+      "wss://relay.primal.net"
+    ]
   }
 }
